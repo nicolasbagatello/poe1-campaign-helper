@@ -95,13 +95,6 @@ export function ActGuide({ actNumber, sectionName }: ActGuideProps) {
       </div>
       
       <div className={styles.content}>
-        {!isPreAct && (
-          <div className={styles.disclaimer}>
-            <strong>Zone Layout Cheat Sheet</strong>
-            <p>Layout information from Engineering Eternity's guides. Layouts may vary.</p>
-          </div>
-        )}
-        
         <div 
           className={styles.markdown}
           dangerouslySetInnerHTML={{ __html: markdownContent }}
