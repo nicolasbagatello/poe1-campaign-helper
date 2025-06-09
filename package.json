@@ -1,5 +1,5 @@
 {
-  "name": "exile-leveling",
+  "name": "poe1-campaign-helper",
   "workspaces": [
     "seeding",
     "web"

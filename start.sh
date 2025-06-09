@@ -14,7 +14,7 @@ echo "=================================================="
 
 # Check if we're in the correct directory by looking for package.json and web folder
 if [ ! -f "package.json" ] || [ ! -d "web" ]; then
-    echo -e "${RED}❌ Please run this script from the poe-exile-leveling directory!${NC}"
+    echo -e "${RED}❌ Please run this script from the poe1-campaign-helper directory!${NC}"
     echo -e "${YELLOW}Make sure you're in the root folder containing package.json and web/seeding directories.${NC}"
     exit 1
 fi
@@ -32,7 +32,7 @@ for port in 3000 3001 4000 4173 5000 5173 5174 8000 8080 8081 9000; do
     lsof -ti:$port | xargs kill -9 2>/dev/null || true
 done
 
-echo -e "${YELLOW}📂 Working in poe-exile-leveling directory${NC}"
+echo -e "${YELLOW}📂 Working in poe1-campaign-helper directory${NC}"
 
 # Complete cleanup of all dependencies, cache, and build artifacts
 echo -e "${YELLOW}🧽 Complete cleanup - removing ALL previous installations...${NC}"
@@ -136,7 +136,7 @@ echo -e "${GREEN}✅ Installation verified successfully${NC}"
 
 # Start the development server
 echo -e "${YELLOW}🌐 Starting fresh development server...${NC}"
-echo -e "${BLUE}The application will be available at: http://localhost:5173/exile-leveling/${NC}"
+echo -e "${BLUE}The application will be available at: http://localhost:5173/poe1-campaign-helper/${NC}"
 echo -e "${BLUE}Press Ctrl+C to stop the server${NC}"
 echo -e "${GREEN}🎉 Ready to go!${NC}"
 echo "=================================================="

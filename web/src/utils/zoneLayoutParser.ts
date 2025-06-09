@@ -96,7 +96,7 @@ export function parseZoneLayoutMarkdown(markdownContent: string): ZoneLayoutData
             const imageMatches = cellContent.match(/!\[\]\[image(\d+)\]/g) || [];
             const imageFilenames = imageMatches.map(match => {
               const imageNumber = match.match(/image(\d+)/)?.[1];
-              return imageNumber ? `/exile-leveling/images/zone-layouts/image${imageNumber}.png` : null;
+              return imageNumber ? `/poe1-campaign-helper/images/zone-layouts/image${imageNumber}.png` : null;
             }).filter(Boolean) as string[];
             
             // Generate HTML layout

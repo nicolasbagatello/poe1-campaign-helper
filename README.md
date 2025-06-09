@@ -55,7 +55,7 @@ npm run build -w web
 
 ### Data Organization
 - **`common/data/routes/`** - Individual act route files (act-1.txt through act-10.txt)
-- **`web/public/exile-leveling/docs/`** - Markdown files with embedded zone layouts
+- **`web/public/docs/`** - Markdown files with embedded zone layouts
 - **`web/src/state/`** - Recoil state management for progress and builds
 
 ## 🗺️ Zone Layout System

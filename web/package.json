@@ -31,7 +31,6 @@
   },
   "devDependencies": {
     "@types/d3": "^7.4.3",
-    "@types/marked": "^6.0.0",
     "@types/pako": "^2.0.3",
     "@types/prismjs": "^1.26.3",
     "@types/react": "^18.2.69",
