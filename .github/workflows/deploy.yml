@@ -25,11 +25,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
-          cache-dependency-path: web/package-lock.json
+
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: web/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('web/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install dependencies
-        run: cd web && npm ci
+        run: cd web && npm install
 
       - name: Build application
         run: cd web && npm run build
