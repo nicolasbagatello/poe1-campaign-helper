@@ -1,0 +1,19 @@
+{
+  "name": "seeding",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "seed": "tsx src/index.ts ../common/data",
+    "generate-route-ids": "tsx src/index.ts ../common/data/json generate-route-ids"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-fetch": "^3.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.45",
+    "tsx": "^4.19.4",
+    "typescript": "^4.9.5"
+  }
+}

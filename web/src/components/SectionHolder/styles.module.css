@@ -1,0 +1,50 @@
+.sectionbar {
+  position: sticky;
+  background-color: var(--primary);
+  top: var(--navbar-height);
+  z-index: 1;
+}
+
+.sectionbarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  width: 100%;
+  color: var(--on-secondary);
+  font-size: var(--size-5);
+  padding: var(--size-2);
+  font-weight: var(--font-heavy);
+  text-align: center;
+  cursor: pointer;
+}
+
+.contentContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.taskListContainer {
+  flex: 0.35; /* 35% of the space */
+  min-width: 0; /* Allows flex item to shrink below its content size */
+}
+
+.zoneGuideContainer {
+  flex: 0.65; /* 65% of the space */
+  min-width: 0; /* Allows flex item to shrink below its content size */
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+  .contentContainer {
+    flex-direction: column;
+  }
+  
+  .zoneGuideContainer {
+    flex: 1;
+    max-width: none;
+  }
+}

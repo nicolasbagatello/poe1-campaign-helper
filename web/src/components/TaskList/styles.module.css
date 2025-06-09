@@ -1,0 +1,27 @@
+.list {
+  border-style: solid;
+  border-width: 0;
+}
+
+.listItem {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  padding: var(--size-2);
+}
+
+.bullet {
+  font-weight: var(--font-heavy);
+  margin-right: var(--size-2);
+}
+
+.listItem.completed .task {
+  opacity: 0.25;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-1);
+  flex: 1;
+}
