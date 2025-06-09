@@ -21,7 +21,7 @@ export function ActGuide({ actNumber, sectionName }: ActGuideProps) {
         const filename = isPreAct ? 'disclaimer.md' : `act${actNumber}.md`;
         
         // Load the specific markdown file
-        const response = await fetch(`/exile-leveling/docs/${filename}`);
+        const response = await fetch(`/poe1-campaign-helper/docs/${filename}`);
         if (!response.ok) {
           throw new Error(`Failed to load ${isPreAct ? 'disclaimer' : `Act ${actNumber}`} data`);
         }
