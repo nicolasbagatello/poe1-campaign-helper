@@ -2,6 +2,11 @@
 
 A comprehensive Path of Exile leveling guide application with interactive zone layouts, build planning, and progress tracking.
 
+## 🌐 Live Demo
+
+**[🚀 Use the app directly in your browser](https://nicolasbagatello.github.io/poe1-campaign-helper/)**  
+*No installation required - start planning your Path of Exile campaign immediately!*
+
 ## ✨ Features
 
 ### 📍 **Interactive Zone Layout Guides**
